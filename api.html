@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="api.css">
+    <title>API movie</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h3>Movie searcher</h3>
+        <!--input-->
+        <input type="text" class="input" placeholder="Search movie title" id="seach-box">
+
+        <!-- search button-->
+        <button class="fetch-btn" onclick=""> Search</button>
+        <br>
+        <!-- poster/image-->
+        <img src="" alt="" id="img-poster">
+
+        <div class="movie-info">
+            <p id="title">Title</p>
+            <p id="actors">Plot</p>
+            <p id="plt">Released</p>
+            <p id="country">Country</p>
+            <p id="actors">Actors</p>
+            <p id="genre">Genre</p>
+            <p id="runtime">Runtime</p>
+        </div>
+    </div>
+
+
+<script src="api.js"></script>    
 </body>
 </html>
