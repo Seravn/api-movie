@@ -1,55 +1,50 @@
 body{
     margin: auto;
     height: 100%;
-	background: linear-gradient(95deg, #49a09d, #5f2c82);
+	background: linear-gradient(95deg, #010101, #2a4e7b);
+}
+/*containers*/
+.container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
 }
 
-.container{
-    margin: 50px;
+  .info {
+    font-size: 20px;
+    padding-left: 20px;
 }
 
 #display-info{
-    display: block;
+    display: flex;
     margin: auto;
     width: 50%;
-    background: radial-gradient(circle, rgba(11,14,30,1) 11%, rgba(148,187,233,1) 92%);
+    background-image: linear-gradient(315deg, #7f5a83 0%, #7590a3 64%);
+    border-radius: 5px;
+
+    max-width: 100% ;
+    flex-basis: 40%;
 }
 
-h3{
-    margin-left: 40%;
-    font-size: 40px ;
-    font-weight: 600;
-    background-image: linear-gradient( #7f5a83, #e5e9ec );
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-family: cursive;
+/*movie title & img*/
+.display {
+    max-width: 100% ;
+    flex-basis: 40%;
 }
 
-h4{
-    margin-left: 40%;
-    font-size: 30px;
-    font-family: serif;
-}
-
-p{
-    font-weight: bold;
-    font-style: italic;
-}
-.info{
-    margin-left: 35%;
-}
 #search-box{
     color: whitesmoke;
     font: bolder;
     font-size: 30px;
 }
 
-
 .input{
+    margin: 50px;
     font-family: inherit;
-    margin-left: 335px;
-    width: 50%;
+    
+    width: 30%;
     border: 0;
     border-bottom: 2px solid gray;
     outline: 0;
@@ -60,7 +55,7 @@ p{
     transition: 0.5s
     
 }
-
+/*button*/
 button{
  
    height: 50px;
@@ -82,32 +77,47 @@ button{
     display: block;
     margin: auto;
 }
-
+ button:hover{
+    background-color: aqua;
+    box-shadow: 0 0 26px 1px  white;
+}
 button:active{
-    box-shadow: 5px 5px 5px #bab2be;
+    background-color: antiquewhite;
+    background-image: linear-gradient(315deg, #4d6691 0%, #cec9d0 64%);
 
 }
-
-
-.fetch-btn:hover{
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 5px 5px 15px rgba(197, 186, 205, 0.825)
+/*poster*/
+img{
+    margin-left: 65px;
+    width: 150%;
+    border-radius: 5px;
 }
-
-
-p{
-    font-style: italic;
-    padding: 15px;
-    font-size: 15px;
-    width: 60%;
-    color: whitesmoke;
+/*font styles*/
+ h3{
+    color: antiquewhite; font-family:
+      'Source Sans Pro', sans-serif; 
+    font-size: 21px;
+    font-weight: 500; 
+    line-height: 22px; 
+    margin: 0 0 15px; 
     
 }
 
-img{
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    border-radius: 5px;
-    width: 50%;
+p{ 
+    color: rgb(235, 224, 224); 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 15px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    margin: 0 0 14px; 
 }
+
+h1{ 
+    margin-left: 50px;
+    color: #c9d0d4; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 26px; 
+    font-weight: 100; 
+    line-height: 50px; 
+    letter-spacing: 1px; 
+    border-bottom: double rgb(255, 255, 255); }
