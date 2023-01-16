@@ -1,28 +1,55 @@
 body{
     margin: auto;
     height: 100%;
+	background: linear-gradient(95deg, #49a09d, #5f2c82);
 }
 
 .container{
-    margin: 150px;
+    margin: 50px;
+}
+
+#display-info{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background: radial-gradient(circle, rgba(11,14,30,1) 11%, rgba(148,187,233,1) 92%);
 }
 
 h3{
-    font-size: 60px ;
+    margin-left: 40%;
+    font-size: 40px ;
     font-weight: 600;
-    background-image: linear-gradient(to left, #7f5a83, #325268 );
+    background-image: linear-gradient( #7f5a83, #e5e9ec );
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     font-family: cursive;
 }
 
+h4{
+    margin-left: 40%;
+    font-size: 30px;
+    font-family: serif;
+}
 
+p{
+    font-weight: bold;
+    font-style: italic;
+}
+.info{
+    margin-left: 35%;
+}
+#search-box{
+    color: whitesmoke;
+    font: bolder;
+    font-size: 30px;
+}
 
 
 .input{
     font-family: inherit;
-    width: 100%;
+    margin-left: 335px;
+    width: 50%;
     border: 0;
     border-bottom: 2px solid gray;
     outline: 0;
@@ -30,7 +57,8 @@ h3{
     color: rgb(90, 87, 87);
     padding: 7px 0;
     background: transparent;
-    transition: border-color 0.2s
+    transition: 0.5s
+    
 }
 
 button{
@@ -41,10 +69,9 @@ button{
    position: relative;
    border: none;
    cursor: pointer;
-   margin: 25px;
    
    background-color: #7f5a83;
-   background-image: linear-gradient(315deg, #7f5a83 0%, #325268 64%);
+   background-image: linear-gradient(315deg, #7f5a83 0%, #527085 64%);
    transition: 500ms;
 
 }
@@ -52,9 +79,9 @@ button{
 .fetch-btn{
     color: white;
     font-weight: bold;
+    display: block;
+    margin: auto;
 }
-
-
 
 button:active{
     box-shadow: 5px 5px 5px #bab2be;
@@ -64,18 +91,23 @@ button:active{
 
 .fetch-btn:hover{
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4)
+    box-shadow: 5px 5px 15px rgba(197, 186, 205, 0.825)
 }
 
 
-
-
-   
-
-
 p{
-    border-bottom: 2px solid rgb(138, 127, 138);
     font-style: italic;
     padding: 15px;
+    font-size: 15px;
+    width: 60%;
+    color: whitesmoke;
     
+}
+
+img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    width: 50%;
 }
